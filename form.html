@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mark Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Mark Entry Form</h2>
+
+    <form action="/submit" method="POST">
+        <label for="name">Student Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="roll_no">Roll No:</label><br>
+        <input type="text" id="roll_no" name="roll_no" required><br>
+
+        <label for="semester">Semester:</label><br>
+        <input type="text" id="semester" name="semester" required><br>
+
+        <h3>Subjects</h3>
+
+        <label for="subject1">Subject 1:</label><br>
+        <input type="text" id="subject1" name="subject1" required><br>
+
+        <label for="marks1">Marks for Subject 1:</label><br>
+        <input type="number" id="marks1" name="marks1" required><br>
+
+        <label for="subject2">Subject 2:</label><br>
+        <input type="text" id="subject2" name="subject2" required><br>
+
+        <label for="marks2">Marks for Subject 2:</label><br>
+        <input type="number" id="marks2" name="marks2" required><br>
+
+        <label for="subject3">Subject 3:</label><br>
+        <input type="text" id="subject3" name="subject3" required><br>
+
+        <label for="marks3">Marks for Subject 3:</label><br>
+        <input type="number" id="marks3" name="marks3" required><br>
+
+        <label for="subject4">Subject 4:</label><br>
+        <input type="text" id="subject4" name="subject4" required><br>
+
+        <label for="marks4">Marks for Subject 4:</label><br>
+        <input type="number" id="marks4" name="marks4" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
